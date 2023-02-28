@@ -482,7 +482,7 @@ footer img {
 
 @media only screen and (max-width:1280px) {
     nav {
-        width: 95%;
+        width: 100%;
         padding: 10px 30px;
     }
 
