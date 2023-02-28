@@ -482,8 +482,7 @@ footer img {
 
 @media only screen and (max-width:1280px) {
     nav {
-        width: 100%;
-        margin-left: -20px;
+        width: 100% !important;
         padding-right: 20px;
     }
 
@@ -714,10 +713,10 @@ footer img {
         width: 332px;
     }
 
-    .contact form {
-        margin-left: 30px;
-    }
-
+   .contact form {
+       margin-left: 30px;
+       width: 90%;
+   }
     .contact {
         height: 175vh;
         display: flex;
