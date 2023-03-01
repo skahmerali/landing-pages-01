@@ -400,10 +400,9 @@ footer {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 120vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.658));
+    height: auto !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.658)), url("./images/building.avif");
     background-size: cover;
-    margin-top: 100px;
     color: #fff;
 }
 
@@ -423,14 +422,24 @@ footer img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 900px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     margin-top: 30px;
 }
 
 .top li {
     list-style: disc;
     font-size: 14px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-top: 566px;
 }
 
 .top h1 {
@@ -476,8 +485,6 @@ footer img {
     align-items: center;
     justify-content: center;
     height: 80px;
-    margin-bottom: -7px;
-    margin-top: 20px;
 }
 
 .footer-bottom img {
@@ -526,6 +533,10 @@ footer img {
 
     html {
         font-size: 62.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .icons {
@@ -542,9 +553,8 @@ footer img {
         height: 200vh;
         position: fixed;
         z-index: 1000;
-        right: -60px;
+        right: -65px;
         color: #fff;
-        padding: 10px 30px;
         background-color: #d31228;
         transition: 0.5s;
     }
@@ -561,9 +571,17 @@ footer img {
         z-index: 1000;
         right: 0;
         color: #fff;
-        padding: 10px 30px;
         background-color: #d31228;
         transition: 0.5s;
+        box-shadow: 0 0 150px rgba(255, 70, 70, 0.582);
+    }
+
+    .menu li {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+
     }
 
     .main_content p {
@@ -579,17 +597,24 @@ footer img {
         font-size: 30px;
     }
 
+    .search {
+        margin-left: 130px;
+    }
+
     .menu .nav_links {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         flex-direction: column;
-        margin-top: 450px;
+        margin-top: 270px;
         width: 100%;
+        color: #fff !important;
     }
 
     .nav_links a {
-        color: #fff;
+        color: #fff !important;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
         line-height: 30px;
     }
 
@@ -645,6 +670,14 @@ footer img {
         display: none;
     }
 
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
     .main_content .buttons {
         height: 2px !important;
     }
@@ -655,7 +688,7 @@ footer img {
 
     .main_content p {
         font-size: 13px;
-        width: 370px;
+        width: 320px !important;
     }
 
     .main_content .buttons button {
@@ -677,9 +710,6 @@ footer img {
         width: 100%;
     }
 
-    .about-content {
-        margin-left: 40px;
-    }
 
     .about-content button {
         font-size: 15px;
@@ -720,15 +750,20 @@ footer img {
     }
 
     .services .heading {
-        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
     }
 
     .services .heading h1 {
-        font-size: 33px !important;
+        font-size: 30px !important;
     }
 
     .services .heading p {
-        font-size: 17px;
+        font-size: 13px;
+        width: 300px;
     }
 
     .card {
@@ -751,50 +786,36 @@ footer img {
         width: 332px;
     }
 
-    .contact form {
-        margin-left: 30px;
-        width: 90%;
-    }
-
     .contact {
-        height: 175vh;
+        height: 121vh;
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         margin-top: 80px;
+        padding: 20px;
+        margin-bottom: 300px;
+    }
+
+    .contact form {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    .contact_heading {
+        margin-left: 0;
+    }
+
+    .contact button {
+        margin-left: 0;
     }
 
     form .input label {
         font-size: 17px;
     }
 
-    .contact_heading {
-        color: rgb(0, 0, 80);
-        margin-left: 32px;
-    }
-
-    .contact button {
-        padding: 10px 30px;
-        background-color: #d31228;
-        box-shadow: 0 0 10px rgba(255, 70, 70, 0.582);
-        color: #fff;
-        font-weight: 700;
-        border-radius: 30px;
-        border: none;
-        margin-top: 20px;
-        width: 200px;
-        margin-left: 39px;
-    }
-
-    .booth {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: -64px;
-        width: 100%;
-        height: 600px;
-        margin-top: 181px;
-    }
 
     .l-card {
         margin-bottom: 40px;
@@ -810,76 +831,25 @@ footer img {
 
     footer {
         height: auto !important;
-    }
-
-    .right img {
-        width: 91px;
-    }
-
-    .right p {
-        font-size: 11px;
-    }
-
-    .right button {
-        font-size: 14px;
+        margin: 0;
+        flex-direction: column;
+        padding-bottom: 40px;
     }
 
     .booth {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        margin-bottom: -150px;
+        display: none;
     }
 
     footer .top {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
         margin-top: 30px;
         padding: 10px;
-        margin-bottom: 150px;
-    }
-
-    .right {
-        width: 200px;
-        margin-left: 20px;
-    }
-
-    .left {
-        width: 150px;
-    }
-
-    .left h1 {
-        font-size: 19px;
-        margin-left: -10px;
-    }
-
-    .left h4 {
-        font-size: 14px;
-        margin-left: -10px;
-    }
-
-    .left li {
-        font-size: 9px;
-    }
-
-    .left li i {
-        font-size: 8px;
-    }
-
-    .footer-bottom {
-        border-top: 1px solid #ccc;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 120px !important;
-        padding: 20px 50px;
     }
 
     .footer-bottom p {
-        font-size: 19px;
+        font-size: 13px;
     }
 
     .about {
