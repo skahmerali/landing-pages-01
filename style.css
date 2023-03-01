@@ -442,12 +442,20 @@ footer img {
 .list-card {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row !important;
     width: 900px;
     height: 500px;
     margin-top: 30px;
+}
+
+.list-card .flex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 400px;
 }
 
 .top li {
@@ -804,23 +812,30 @@ footer img {
     .contact {
         height: 121vh;
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin-top: 80px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 180px;
         padding: 20px;
-        margin-bottom: 300px;
+        margin-bottom: 130px;
     }
 
     .contact form {
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         width: 90%;
+        margin-left: 20px;
     }
 
     .contact_heading {
         margin-left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     .contact button {
@@ -847,7 +862,10 @@ footer img {
         height: auto !important;
         margin: 0;
         flex-direction: column;
-        padding-bottom: 40px;
+        padding-bottom: 780px !important;
+        position: relative;
+        overflow: hidden;
+        margin-top: 167px !important;
     }
 
     .booth {
@@ -860,6 +878,7 @@ footer img {
         justify-content: flex-start !important;
         margin-top: 70px;
         padding: 10px;
+        margin-bottom: 700px;
     }
 
     .footer-bottom {
@@ -868,8 +887,9 @@ footer img {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 80px;
-        margin-top: 566px;
+        height: 80px !important;
+        bottom: 0;
+        margin-bottom: -500px;
     }
 
     .footer-bottom p {
