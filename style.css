@@ -422,8 +422,9 @@ footer img {
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    width: 300px;
-    height: 300px;
+    flex-direction: row !important;
+    width: 900px;
+    height: 500px;
     margin-top: 30px;
 }
 
@@ -432,15 +433,6 @@ footer img {
     font-size: 14px;
 }
 
-.footer-bottom {
-    border-top: 1px solid #ccc;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    margin-top: 566px;
-}
 
 .top h1 {
     font-size: 20px;
@@ -816,7 +808,6 @@ footer img {
         font-size: 17px;
     }
 
-
     .l-card {
         margin-bottom: 40px;
     }
@@ -846,6 +837,16 @@ footer img {
         justify-content: flex-start !important;
         margin-top: 30px;
         padding: 10px;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #ccc;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        margin-top: 566px;
     }
 
     .footer-bottom p {
