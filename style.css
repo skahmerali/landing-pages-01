@@ -217,6 +217,7 @@ nav .logo {
     align-items: center;
     justify-content: center;
     background-color: #ffffffd3;
+    transform: rotate();
 }
 
 .about img {
