@@ -47,13 +47,51 @@ nav .logo {
     margin-left: -20px;
 }
 
-.nav_links a {
-    text-decoration: none;
+
+
+.nav_links ul {
+    top: 70px;
+    position: fixed;
+    float: right;
+    border: 1px solid #fff;
+}
+
+.menu ul a {
     color: #000;
+    font-size: 15px;
+    line-height: 32px;
+    padding: 0 15px;
     text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 550;
-    transition: 0.5s;
+    text-decoration: none;
+    display: block;
+}
+
+.menu ul li {
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul ul {
+    position: absolute;
+    background-color: #d31228;
+    top: 100%;
+    display: none;
+}
+
+.menu ul ul li {
+    float: none;
+    width: 170px;
+}
+
+.menu ul ul li a {
+    color: #fff !important;
+}
+
+.menu ul ul ul {
+    top: 0px;
+    left: 100%;
 }
 
 .menu {
@@ -63,8 +101,8 @@ nav .logo {
     width: 500px;
 }
 
-.nav_links a:hover {
-    color: #d31228;
+.menu ul li:hover>ul {
+    display: block;
 }
 
 .search i {
@@ -713,10 +751,11 @@ footer img {
         width: 332px;
     }
 
-   .contact form {
-       margin-left: 30px;
-       width: 90%;
-   }
+    .contact form {
+        margin-left: 30px;
+        width: 90%;
+    }
+
     .contact {
         height: 175vh;
         display: flex;
