@@ -57,7 +57,7 @@ nav .logo {
 }
 
 .menu ul a {
-    color: #000;
+    color: #00063d;
     font-size: 15px;
     line-height: 32px;
     padding: 0 15px;
@@ -202,27 +202,30 @@ nav .logo {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 90vh;
+    height: 140vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("./images/laptop.jpg");
     margin-top: 100px;
+    opacity: 0.8;
 }
 
 .about {
-    width: 110% !important;
+    width: 100% !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 80%;
+    height: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffffd3;
-    transform: rotate();
+    transform: rotate(-5deg) scale(110%);
 }
 
 .about img {
-    width: 350px;
-    margin-left: 40px;
+    width: 300px;
+    transform: translateY(-70px) !important;
+    margin-left: 50px;
+    transform: rotate(5deg);
 }
 
 .about-content {
@@ -231,11 +234,14 @@ nav .logo {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    filter: blur(0px) !important;
+    transform: rotate(5deg);
+    margin-top: 30px;
 }
 
 .about-content h1 {
     font-size: 45px;
-    color: #000;
+    color: #00063d;
     font-weight: 700;
 }
 
@@ -264,6 +270,8 @@ nav .logo {
     border-top-left-radius: 50px;
     margin-top: 100px;
     position: relative;
+    margin-bottom: 100px;
+    box-shadow: 0px 15px 16px -15px #d31228;
 }
 
 .cards {
@@ -295,6 +303,10 @@ nav .logo {
     cursor: pointer;
 }
 
+.services .heading {
+    margin-top: 50px;
+}
+
 .image_heading {
     display: flex;
     align-items: center;
@@ -322,6 +334,7 @@ nav .logo {
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.582);
     padding: 10px 30px;
+    margin-bottom: 20px;
     border: none;
     color: #fff;
 }
@@ -405,6 +418,14 @@ footer {
     background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.658)), url("./images/building.avif");
     background-size: cover;
     color: #fff;
+    position: relative;
+}
+
+.people {
+    position: absolute;
+    top: -40%;
+    right: -0.8%;
+    width: 350px;
 }
 
 footer .top {
@@ -547,6 +568,10 @@ footer img {
         color: #fff;
         background-color: #d31228;
         transition: 0.5s;
+    }
+
+    .people {
+        display: none;
     }
 
     .menu.active {
@@ -859,5 +884,16 @@ footer img {
         align-items: center;
         justify-content: center;
         background-color: #ffffffd3;
+        transform: rotate(0deg);
     }
+
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        transform: rotate(0deg);
+    }
+
 }
