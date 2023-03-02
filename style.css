@@ -701,6 +701,11 @@ footer img {
         margin-top: 40px;
     }
 
+    .main_content img {
+        width: 40px !important;
+        transform: translateY(-20px) rotate(120deg);
+    }
+
     .cards {
         display: flex;
         align-items: center;
@@ -745,7 +750,7 @@ footer img {
     }
 
     .main_content h1 {
-        font-size: 30px;
+        font-size: 27px;
     }
 
     .main_content p {
@@ -946,6 +951,10 @@ footer img {
         transform: rotate(0deg);
     }
 
+    .contact img {
+        display: none;
+    }
+
     .about-content {
         display: flex;
         align-items: center;
@@ -953,6 +962,10 @@ footer img {
         text-align: center;
         width: 100%;
         transform: rotate(0deg);
+        margin: 0 !important;
     }
 
+    .aboutus {
+        margin-top: 200px;
+    }
 }
