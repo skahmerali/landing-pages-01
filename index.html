@@ -11,119 +11,73 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="blog.css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/themes/splide-default.min.css"
-      integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
+    <button class="button" onclick="displayFormFreeProposal()">Request a free proposal</button>
+    <div class="form_overlay_wrapper" id="form_wrapper">
+        <div class="form_overlay">
+            <section class="section-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-left">
+                            <!-- title -->
+                            <div class="title_wrapper">
+                                <h2 class="theme_title">
+                                    Request A <span> Free Proposal</span>
+                                </h2>
+                                <button class="closer_btn" onclick="closeForm()"><i class="fa fa-xmark"></i> </button>
+                            </div>
+                            <!-- title -->
+                            <div class="form-wrapper">
+                                <div class="request-quote">
+                                    <form id="form2" method="post" style="width:100%;">
+                                        <input name="fullname" id="fullname" placeholder="Your Full Name"
+                                            class="form-control">
+                                        <input name="company" id="company" placeholder=" Company Name"
+                                            class="form-control">
+                                        <input name="phone" id="phone" placeholder="Phone Number" class="form-control">
+                                        <input name="email" id="email" placeholder="Email Address" class="form-control">
+                                        <input name="website" id="website" placeholder="Website" class="form-control">
+                                        <input name="budget" id="budget" placeholder="Budget" class="form-control">
+                                        <textarea name="details" id="details" placeholder="Project Details"
+                                            style="width: 98%;height:200px;" cols="1000" rows="5"></textarea>
 
-    
-  <!-- Hidden Elements -->
-  <div class="form_overlay_wrapper">
-    <div class="form_overlay">
-      <section class="section-10">
-        <div class="container">
-          <div class="row">
-            <div class="col-left">
-              <!-- title -->
-              <div class="title_wrapper">
-                <h2 class="theme_title">
-                  Request A <span> Free Proposal</span>
-                </h2>
-                <div class="closer_btn"><a href="javscript:void(0)"><i class="fas fa-times"></i></a></div>
-              </div>
-              <!-- title -->
-              <div class="form-wrapper">
-                <div class="request-quote">
-                  <form id="form2" method="post" style="width:100%;">
-                    <input name="fullname" id="fullname" placeholder="Your Full Name" class="form-control">
-                    <input name="company" id="company" placeholder=" Company Name" class="form-control">
-                    <input name="phone" id="phone" placeholder="Phone Number" class="form-control">
-                    <input name="email" id="email" placeholder="Email Address" class="form-control">
-                    <input name="website" id="website" placeholder="Website" class="form-control">
-                    <input name="budget" id="budget" placeholder="Budget" class="form-control">
-                    <textarea name="details" id="details" placeholder="Project Details" style="width: 98%;height:200px;"
-                      cols="1000" rows="5"></textarea>
+                                        <div class="form-submit-btn">
+                                            <a class="form-btn btn" href="javascript:void(0)" id="submitForm"
+                                                style="float: right;margin: 0 2% 0 0;">Submit</a>
+                                        </div>
+                                        <div class="form-submit-btn">
+                                            <a class="form-btn btn" href="javascript:void(Tawk_API.toggle())"
+                                                style="background-color:#d31228;float: right;margin: 0 2% 0 0;color:white;">Live
+                                                Chat</a>
+                                        </div>
+                                    </form>
+                                </div>
 
-                    <div class="form-submit-btn">
-                      <a class="form-btn btn" href="javascript:void(0)" id="submitForm"
-                        style="float: right;margin: 0 2% 0 0;">Submit</a>
+                                <div class="clear_fix"></div>
+
+                            </div>
+
+                        </div>
+
+
                     </div>
-                    <div class="form-submit-btn">
-                      <a class="form-btn btn" href="javascript:void(Tawk_API.toggle())"
-                        style="background-color:#d31228;float: right;margin: 0 2% 0 0;color:white;">Live Chat</a>
-                    </div>
-                  </form>
                 </div>
 
-                <div class="clear_fix"></div>
 
-              </div>
-
-            </div>
-
-
-          </div>
+            </section>
         </div>
-
-
-      </section>
     </div>
-  </div>
-
-  <div class="sticky_form_wrapper">
-    <div class="sticky_form">
-      <a href="javascript:void(0)" class="clickable">
-        <div class="pop_btn">
-          <div class="icon"><i class="	fas fa-arrow-up"></i></div>
-          <div class="text"><span>Request a free proposal</span></div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <!-- Hidden Elements -->
-  <!-- Responsive Sidebar -->
-  <div class="body_overlay"></div>
-  <div class="sidebar">
-    <div class="wrapper">
-      <div class="closer_btn ms-auto">
-
-        <i class="fas fa-times"></i>
-      </div>
-      <!-- <div class="menu">
-        <ul>
-          <a href="https://contentluxury.com/">
-            <li>Home</li>
-          </a>
-          <a href="#about">
-            <li>About us</li>
-          </a>
-          <a href="#pricing">
-            <li>Pricing</li>
-          </a>
-          <a href="#contact-us">
-            <li>Contact</li>
-          </a>
-        </ul>
-      </div> -->
-    </div>
-  </div>
-
-
-<!-- ########################################################## -->
-
-    <nav  id="navbarMain">
-        <img src="./images/logo.png" class="logo" alt="logo">
+    <nav>
+        <img src="./images/logo.png" class="logo">
         <div class="menu" id="menu">
             <ul class="nav_links">
                 <li><a href="#">home</a></li>
@@ -154,15 +108,16 @@
             <div class="search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            <i class="fa-solid fa-xmark" id="close" onclick="closeMenu()"></i>
         </div>
         <div class="icons">
-            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            <i class="fa-solid fa-bars" id="bars" onclick="openMenu()"></i>
         </div>
     </nav>
     <div class="main_home">
         <div class="main_content">
-            <h1>Content Writting <br /> Services Starting from <br /> Only <img src="./images/51541cba-dc2a-4650-91d1-b96336b96b1a-removebg-preview.png"  alt="">
+            <h1>Content Writting <br /> Services Starting from <br /> Only
+                <img src="./images/arrow.png" alt="arrow" class="arrow">
                 <span>$9.95/page</span></h1>
             <p>We are fastest growing digital agency that with strong <br />bussiness idea and ethic. Check
                 our Work with awesome <br /> customers</p>
@@ -171,7 +126,9 @@
                 <button>LIVE CHAT</button>
             </div>
         </div>
-        <img src="./images/main.png" alt="">
+        <div class="banner">
+            <img src="./images/main.png" alt="">
+        </div>
     </div>
     <div class="aboutus" id="about">
         <div class="about">
@@ -305,7 +262,7 @@
                 <label>Message</label>
                 <textarea rows="7" cols="70"></textarea>
             </div>
-            <img src="./images/Group 101-PhotoRoom.png" alt="">
+            <img src="./images/Group 101-PhotoRoom.png" class="people" alt="">
         </form>
         <button>Submit</button>
         <button>LIVE CHAT</button>
@@ -420,7 +377,7 @@
             <div class="right">
                 <img src="./images/logo.png" alt="">
                 <p>We work with a passions of talking challenges and creating new ones in advertising sector.</p>
-               <button> <a href="#about">About Us</a></button>
+                <button>About Us</button>
             </div>
             <div class="left">
                 <h1>Offical Info :</h1>
@@ -441,14 +398,8 @@
         </div>
     </footer>
 
-    <script>
-        const openMenu = () => {
-            const menu = document.getElementById("menu")
-            menu.classList.toggle("active")
-        }
-    </script>
+
 </body>
-<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
 </script>
@@ -458,5 +409,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
 </script>
+<script src="./script.js"></script>
 
 </html>
