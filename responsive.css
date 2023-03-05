@@ -13,6 +13,17 @@
         transition: 0.5s;
     }
 
+    .form_overlay{
+        height: 140vh;
+        position: relative;
+        padding-top: 15%;
+    }
+
+    .form-wrapper .request-quote .form-submit-btn  #submitForm{
+       right: 7%;   
+       position: relative;
+    }
+
     .menu.active {
         display: flex;
         align-items: center;
