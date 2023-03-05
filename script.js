@@ -27,3 +27,14 @@ function closeForm() {
   const form = document.getElementById("form_wrapper");
   form.classList.remove("form_overlay_active");
 }
+
+
+var data = {
+  "name": name,
+  "company": company,
+  "phone": phone,
+  "email": email,
+  "website": website,
+  "budget": budget,
+  "details": details
+ }
